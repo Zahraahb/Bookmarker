@@ -1,0 +1,85 @@
+body{
+    margin-block: 50px;
+    background-color: #F7ECDE;
+}
+.bookmark-body{
+    border-top: dotted 2px #000000;
+
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+h1::after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.5s;
+
+
+}
+h1:hover::after{
+    height: 70%;
+}
+h2{
+    font-family: 'Righteous', sans-serif;
+    font-size: 25px;
+    
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-control:focus{
+    border-color: rgb(217, 156, 57);
+    box-shadow: 0 0 0 0.25rem rgba(217, 156, 57,0.25);
+  
+}
+.submit{
+    background-color: #D1512E !important;
+    font-family: 'PT Sans Caption', sans-serif;
+    transition: all 0.5s;
+}
+.submit:hover{
+    background-color: #BB4120 !important;
+}
+form{
+   border-bottom: dotted 2px #000000;
+
+
+}
+.table>:not(caption)>*>* {
+    padding-block: 12px;
+    font-family: 'PT Sans Caption', sans-serif;
+    
+}
+
+.visit{
+    background-color: #bbcd5d;
+    color: #FFFFFF;
+    transition: background-color 0.5s;
+}
+.visit:hover{
+    background-color: #9EB23A;
+}
+a .btn:hover{
+color:white !important;
+}
+.btn-delete{
+    transition: color 0.5s !important;
+
+}
+.btn-delete:hover{
+    background-color: #c52131 !important;
+}
